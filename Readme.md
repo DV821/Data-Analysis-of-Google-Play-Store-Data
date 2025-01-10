@@ -1,21 +1,31 @@
-## EDA And Feature Engineering Of Google Play Store Dataset
+# Google Play Store Data Analysis
 
-### Problem statement:
-Today, 1.85 million different apps are available for users to download. Android users have even more from which to choose, with 2.56 million available through the Google Play Store. These apps have come to play a huge role in the way we live our lives today. Our Objective is to find the Most Popular Category, find the App with largest number of installs , the App with largest size etc.
+## Overview
+This project involves data cleaning and exploratory data analysis (EDA) of the Google Play Store dataset. The primary objective is to prepare the data for analysis and visualize key insights regarding app ratings, categories, and installations.
 
-The data consists of 20 column and 10841 rows.
+## Project Structure
+- `Data Cleaning.ipynb`: Jupyter Notebook for data cleaning processes.
+- `EDA.ipynb`: Jupyter Notebook for exploratory data analysis and visualizations.
+- `googleplaystore_clean.csv`: Cleaned dataset ready for analysis.
 
-### Feature Information
-1. App :- Name of the App
-2. Category :- Category under which the App falls.
-3. Rating :- Application's rating on playstore
-4. Reviews :- Number of reviews of the App.
-5. Size :- Size of the App.
-6. Install :- Number of Installs of the App
-7. Type :- If the App is free/paid
-8. Price :- Price of the app (0 if it is Free)
-9. Content Rating :- Appropiate Target Audience of the App.
-10. Genres:- Genre under which the App falls.
-11. Last Updated :- Date when the App was last updated
-12. Current Ver :- Current Version of the Application
-13. Android Ver :- Minimum Android Version required to run the App
+## Data Cleaning
+The data cleaning process includes:
+- Loading the dataset using Pandas.
+- Checking for and removing duplicate entries based on the 'App' column.
+- Saving the cleaned dataset as `googleplaystore_clean.csv`.
+
+## Exploratory Data Analysis (EDA)
+The EDA process includes:
+- Documenting feature information such as app name, category, rating, reviews, size, installs, type, price, content rating, genres, last updated date, current version, and minimum Android version.
+- Analyzing and visualizing the top 5 apps in each of the top 5 genres based on the number of installs.
+- Identifying the number of apps with ratings greater than 4.5 and visualizing the top 10 categories with such apps.
+
+## Libraries Used
+- `numpy`: For numerical operations.
+- `pandas`: For data manipulation and analysis.
+- `matplotlib`: For data visualization.
+- `seaborn`: For statistical data visualization.
+- `warnings`: To manage warning messages in the output.
+
+## Conclusion
+This project demonstrates the ability to clean and analyze a real-world dataset, providing insights into app performance on the Google Play Store. The findings can be useful for developers and marketers to understand trends and improve app offerings.
